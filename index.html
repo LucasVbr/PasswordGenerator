@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Générateur de MDP</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <!-- Resultat -->
+            <div>
+                <span id="password">Générateur de mot de passe</span>
+            </div>
+
+            <!-- Paramètres -->
+            <fieldset>
+                <legend>Paramètres :</legend>
+                <div>
+                    <input type="checkbox" id="caps-checkbox" name="caps-checkbox">
+                    <label for="caps-checkbox">Majuscules</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers-checkbox" name="numbers-checkbox">
+                    <label for="numbers-checkbox">Nombres</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="specials-checkbox" name="specials-checkbox">
+                    <label for="specials-checkbox">Caractères spéciaux</label>
+                </div>
+                <div>
+                    <input type="range" name="nbDigits-range" id="nbDigits-range" min="1" , max="25" step="1">
+                    <label for="nbDigits-range">Nombre de caractères</label>
+                </div>
+                <div>
+                    <input type="button" id="submit-button" value="Generate" onclick="generate()">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script>
+
+        function generate() {
+            /* HTML Elements */
+            let capsCheckBox = document.getElementById("caps-checkbox");
+            let numbersCheckBox = document.getElementById("numbers-checkbox");
+            let specialsCheckBox = document.getElementById("specials-checkbox");
+            let nbDigitsRange = document.getElementById("nbDigits-range");
+            let passwordInput = document.getElementById("password");
+
+            /* Values */
+            var nbDigits = nbDigitsRange.value
+            var hasCaps = capsCheckBox.checked;
+            var hasNumbers = numbersCheckBox.checked;
+            var hasSpecials = specialsCheckBox.checked;
+
+            var passwordGenerated = generatePassword(nbDigits, hasCaps, hasNumbers, hasSpecials)
+
+            password.innerHTML = passwordGenerated
+        }
+
+    </script>
+</body>
+
+</html>
