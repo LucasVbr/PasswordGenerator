@@ -10,7 +10,7 @@ Tool that generate randomly strong passwords.
 
 ## Start
 
-Go to the [website](https://LucasVbr.github.io/password-generator/) then :
+Go to the [website](https://lucasvbr.github.io/PasswordGenerator/) then :
 - move the cursor to the length you want
 - check characters you want
 
@@ -26,4 +26,4 @@ Go to the [website](https://LucasVbr.github.io/password-generator/) then :
 Listez le(s) auteur(s) du projet ici !
 * [**@LucasVbr**](https://github.com/lucasvbr)
 
-All the [contributors](https://github.com/lucasvbr/password-generator/contributors) of the project are here !
+All the [contributors](https://github.com/lucasvbr/PasswordGenerator/contributors) of the project are here !
