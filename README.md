@@ -14,7 +14,7 @@ Go to the [website](https://LucasVbr.github.io/password-generator/) then :
 - move the cursor to the length you want
 - check characters you want
 
-![Preview]()
+![Preview](./preview.png)
 
 ## Made with
 
